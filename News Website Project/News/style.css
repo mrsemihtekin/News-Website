@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: aliceblue;
+    color: #333;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+header {
+    margin: 0;
+    background: linear-gradient(to bottom, rgb(50, 50, 116), rgb(2, 2, 43));
+    position: relative;
+}
+
+.header-top h1 {
+   
+    color: aliceblue;
+    font-size: 3rem;
+    margin: 10px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-top h1 span {
+    padding: 0 15px;
+    border: none;
+
+}
+
+.header-top h1 span:first-child {
+    background: linear-gradient(to bottom, rgb(101, 101, 192), rgb(7, 7, 59));
+    border-radius: 5px 0 0 5px;
+}
+
+.header-top h1 span:nth-child(2) {
+    background: linear-gradient(to bottom, rgb(204, 100, 100), rgb(192, 0, 0));
+}
+
+.header-top h1 span:last-child {
+    background: linear-gradient(to bottom, rgb(240, 216, 113), rgb(105, 88, 9));
+    font-size: small;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    border-radius: 0 5px 5px 0;
+}
+
+.header-top .logo {
+    padding: 15px 0 15px 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links a li {
+    color: aliceblue;
+    list-style: none;
+    padding: 0 10px;
+}
+
+.sign-container {
+    margin: 0 25px 15px 0;
+}
+
+.sign-button {
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to right, blue
+    ,rgb(158, 29, 29), rgb(153, 153, 26));
+    color: #fff;
+    cursor: pointer;
+}
+
+.sign-container.bigger {
+    background-color: aliceblue;
+    margin: 0 10px 30px 0;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: rgb(42, 83, 145);
+    color: aliceblue;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 5px;
+   cursor: pointer;
+}
+
+
+.btn:active {
+    transform: scale(0.98);
+  }
+
+  .btn:focus{
+    outline: 0;
+  }
+
+  .prev-button:disabled, .next-button:disabled {
+    background-color: rgb(156, 144, 144);
+    cursor: not-allowed;
+    transform: scale(1);
+  }
+
+.x-button {
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+main {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.search-container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-area {
+    position: relative;
+    height: 50px;
+}
+
+.search-area input {
+    background-color: #fff;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+
+.search-button {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.search-button:focus,.input:focus {
+    outline: none;
+}
+
+.search-area.clicked input {
+    width: 400px;
+}
+
+.search-area.clicked .search-button {
+    transform: translateX(400px);
+}
+
+.news {
+    width: 90%;
+    margin: 0px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 36px;
+    color: rgb(12, 28, 44);
+}
+
+hr {
+    height: 1px;
+    width: 90%;
+    border: 1px solid rgb(199, 27, 27);
+    margin-bottom: 20px;
+}
+
+.slides-container {
+    padding: 30px 40px;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    background-color: rgb(42, 83, 145); 
+     overflow: hidden;
+     border-radius: 25px;
+}
+
+.slide-container {
+    color: #fff;
+    padding: 20px 10px;
+    width: 10vw;
+    transition: all 700ms ease-in;
+}
+
+.slide-container h3 {
+    color: aqua;
+    line-height: 1.2;
+    font-size: 24px;
+    margin: 0;
+    opacity: 0;
+}
+
+.slide-container p {
+    line-height: 1.2;
+    margin: 0;
+    opacity: 0;  
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+   
+}
+
+.slide-container.active {
+    flex: 5;
+}
+
+.slide-container.active h3, .slide-container.active p {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.progress-container {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    width: 350px;
+}
+
+.progress-container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    background-color: rgb(156, 144, 144);
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.progress {
+    background-color: rgb(62, 62, 180);
+    position: absolute; 
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease; 
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border: 2px solid rgb(156, 144, 144);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.circle.active {
+    border: 3px solid rgb(62, 62, 180);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    margin-top: 100px;
+    background: linear-gradient(to bottom, rgb(42, 83, 145), rgb(192, 0, 0));
+}
+
+.followers-container {
+    display: flex;
+    color: #fff; 
+}
+
+.brand {
+    padding: 20px 40px;
+}
+
+.brand i {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.twitter-counter, .facebook-counter, .youtube-counter {
+    font-size: 3rem;
+    font-family: monospace;
+}
+
+

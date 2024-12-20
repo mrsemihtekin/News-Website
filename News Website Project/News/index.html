@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <img src="https://img.freepik.com/free-vector/gradient-breaking-news-logo-design_23-2151157239.jpg?semt=ais_hybrid"
+                class="logo" alt="Breaking News Logo">
+            <h1> <span>Breaking</span> <span> News </span><span> LIVE </span></h1>
+        </div>
+        <div class="header-bottom">
+            <div class="links-container">
+                <ul class="links">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Politics</li>
+                    </a>
+                    <a href="#">
+                        <li>Sports</li>
+                    </a>
+                    <a href="#">
+                        <li>Science&Techs</li>
+                    </a>
+                    <a href="#">
+                        <li>Art</li>
+                    </a>
+                    <a href="#">
+                        <li>World</li>
+                    </a>
+                    <a href="#">
+                        <li>Turkey</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="sign-container">
+                <button class="sign-button">Click it to Sign</button>
+                
+                <!-- <button class="login-btn btn">Login</button>
+                <button class="subscribe-btn btn">Subscribe</button>
+                <button class="x-button"><i class="fa-solid fa-x"></i></button> -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="search-container">
+            <div class="search-area clicked ">
+                <input type="text" placeholder="Search..." class="search">
+                <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
+        <h2 class="news">NEWS</h2>
+        <hr>
+
+        <div class="slides-container">
+            <div class="slide-container active">
+                <div class="slide"
+                    style="background-image: url('https://ichef.bbci.co.uk/news/480/cpsprodpb/1fe1/live/345cca60-b714-11ef-bae3-75ea1048aab7.jpg.webp')">
+                </div>
+                <h3>Jamie Foxx reveals he had a stroke in 2023</h3>
+                <p>The Hollywood star said he cannot remember the first 20 days following the stroke in April last year.
+                </p>
+            </div>
+
+            <div class="slide-container">
+                <div class="slide"
+                    style="background-image: url('https://ichef.bbci.co.uk/news/480/cpsprodpb/dc1a/live/03cd5100-b762-11ef-818f-8b411e206740.jpg.webp')">
+                </div>
+                <h3>N Korea mocks 'dictator' Yoon's 'insane' martial law attempt</h3>
+                <p>Pyongyang has responded to the political turmoil in South Korea for the first time.</p>
+
+            </div>
+
+            <div class="slide-container">
+                <div class="slide"
+                    style="background-image: url('https://ichef.bbci.co.uk/news/800/cpsprodpb/e694/live/5ebb4f50-b7a7-11ef-a9b3-09d63accb48d.jpg.webp')">
+                </div>
+                <h3>Dozens of Ghana president-elect's supporters arrested in post-poll chaos</h3>
+                <p>Supporters of John Mahama allegedly attacked some state institutions and looted properties.</p>
+
+            </div>
+
+
+            <div class="slide-container">
+                <div class="slide"
+                    style="background-image: url('https://ichef.bbci.co.uk/news/480/cpsprodpb/154d/live/a4311620-b61a-11ef-a2ca-e99d0c9a24e3.jpg.webp')">
+                </div>
+                <h3>The woman helping amputees rebuild their lives in war-torn Ukraine</h3>
+                <p>Olga Rudnieva is supporting Ukrainian soldiers who have lost limbs in the front line to return from
+                    injury even stronger.</p>
+
+            </div>
+
+            <div class="slide-container">
+                <div class="slide"
+                    style="background-image: url('https://ichef.bbci.co.uk/news/480/cpsprodpb/9693/live/2ff96c40-b740-11ef-84ef-5dac5cb049b7.jpg.webp')">
+                </div>
+                <h3>'They have to be favourites' - Liverpool 'perfect' in Champions League</h3>
+                <p>Six wins out of six and "one of the world's best keepers" returning to the starting XI - are
+                    Liverpool favourites to win the Champions League?</p>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="circle active">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+                <div class="circle">4</div>
+                <div class="circle">5</div>
+            </div>
+
+            <button class="prev-button btn" id="prev">Prev</button>
+            <button class="next-button btn" id="next">Next</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="followers-container">
+
+            <div class="twitter brand">
+                <i class="fa-brands fa-twitter"></i>
+                <div class="twitter-counter counter" data-target="12000"></div>
+                <small>Twitter Followers</small>
+            </div>
+
+            <div class="youtube brand">
+                <i class="fa-brands fa-youtube"></i>
+                <div class="youtube-counter counter" data-target="5000"></div>
+                <small>Youtube Subscribers</small>
+            </div>
+
+            <div class="facebook brand">
+                <i class="fa-brands fa-facebook"></i>
+                <div class="facebook-counter counter" data-target="7500"></div>
+                <small>Facebook Fans</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
